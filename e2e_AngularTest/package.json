@@ -1,0 +1,25 @@
+{
+  "name": "e2e_angulartest",
+  "version": "1.0.0",
+  "description": "Simple project fot Protractor/TypeScript tests",
+  "main": "protractor.conf.js",
+  "dependencies": {
+    "@types/jasmine": "^3.5.11",
+    "@types/node": "^14.0.22",
+    "jasmine": "^3.5.0",
+    "jasmine-spec-reporter": "^5.0.2",
+    "protractor": "^7.0.0",
+    "protractor-html-reporter-2": "^1.0.4",
+    "save": "^2.4.0",
+    "ts-node": "^8.10.2",
+    "tslint": "^6.1.2",
+    "typescript": "^3.9.6",
+    "yargs": "^15.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "protractor protractor.conf.js"
+  },
+  "author": "Volodymyr Hunko",
+  "license": "ISC"
+}
