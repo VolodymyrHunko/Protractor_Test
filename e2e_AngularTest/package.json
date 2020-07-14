@@ -2,7 +2,7 @@
   "name": "e2e_angulartest",
   "version": "1.0.0",
   "description": "Simple project fot Protractor/TypeScript tests",
-  "main": "protractor.conf.js",
+  "main": "conf.js",
   "dependencies": {
     "@types/jasmine": "^3.5.11",
     "@types/node": "^14.0.22",
@@ -18,7 +18,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "protractor protractor.conf.js"
+    "test": "protractor conf.js"
   },
   "author": "Volodymyr Hunko",
   "license": "ISC"
