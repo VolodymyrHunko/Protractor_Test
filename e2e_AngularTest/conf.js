@@ -4,7 +4,7 @@ exports.config = {
     directConnect: true,
     onPrepare(){
         require('ts-node').register({
-            project:require('path').join(__dirname,'tsconfig.json')
+            project:require('path').join(__dirname,'./tsconfig.json')
         });
     },
     onComplete(){}
