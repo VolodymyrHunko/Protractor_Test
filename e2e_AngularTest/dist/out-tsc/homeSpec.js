@@ -38,5 +38,25 @@ describe("Sample test suit for Country App", function () {
         });
         protractor_1.browser.sleep(2000);
     });
+    it('Output should be present after entering name', function () {
+        var tring = protractor_1.element(protractor_1.by.id('try'));
+        tring.click();
+        var abc = protractor_1.browser.switchTo().alert();
+        abc.accept();
+        var name = protractor_1.element(protractor_1.by.id('name'));
+        name.click();
+        var output = protractor_1.element(protractor_1.by.id('data'));
+        expect(name).not.toBeNull;
+    });
+    it('Output should not be present after cliking code', function () {
+        var tring = protractor_1.element(protractor_1.by.id('try'));
+        tring.click();
+        var abc = protractor_1.browser.switchTo().alert();
+        abc.accept();
+        var name = protractor_1.element(protractor_1.by.id('code'));
+        name.click();
+        var output = protractor_1.element(protractor_1.by.id('data'));
+        expect(name).toBeNull;
+    });
 });
 //# sourceMappingURL=../../src/dist/out-tsc/homeSpec.js.map

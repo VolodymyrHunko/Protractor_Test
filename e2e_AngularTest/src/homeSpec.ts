@@ -48,4 +48,30 @@ describe("Sample test suit for Country App", () => {
         });
         browser.sleep(2000);
     })
+    it('Output should be present after entering name', () => {
+      let tring:ElementFinder = element(by.id('try'));
+        tring.click();
+
+        let abc = browser.switchTo().alert();
+        abc.accept();
+
+        let name:ElementFinder = element(by.id('name'));
+        name.click();
+
+        let output:ElementFinder = element(by.id('data'));
+        expect(name).not.toBeNull;
+    })
+    it('Output should not be present after cliking code', () => {
+      let tring:ElementFinder = element(by.id('try'));
+        tring.click();
+
+        let abc = browser.switchTo().alert();
+        abc.accept();
+
+        let name:ElementFinder = element(by.id('code'));
+        name.click();
+
+        let output:ElementFinder = element(by.id('data'));
+        expect(name).toBeNull;
+    })
 });
