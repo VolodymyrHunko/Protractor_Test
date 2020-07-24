@@ -7,7 +7,7 @@ describe("Sample test suit for Country App", () => {
         let sampleElement: ElementFinder = element(by.id('country')); //ElementFinder function used here 
         sampleElement.getAttribute('innerText').then((text) => {
           console.log(text);
-          
+          expect(text).toBe('.....');
         });
         
     });
