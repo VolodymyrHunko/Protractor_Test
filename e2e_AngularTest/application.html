@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h3>The country you attempt to search</h3>
+     <p id="country">.....</p>
+    <button onclick="myFunction()">Click to Start</button>
+    
+<script>
+function myFunction(){
+var input = prompt("Enter the country's name or code to find the capital city", "usa");
+    document.getElementById("country").innerHTML = input;   
+}
+    </script>
+    
+<p id="data"></p>
+
+</body>
+</html>
